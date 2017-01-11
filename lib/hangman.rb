@@ -59,10 +59,13 @@ class Game
 
 	end
 
+
+
 	def game_on
-		puts @word
 		attempt = 0
+		
 		while !won && (attempt <= @word.length+1)
+		
 			prompt(attempt)
 			
 			check_guess
@@ -76,4 +79,3 @@ class Game
 end
 
 game1 = Game.new
-game1.game_on
